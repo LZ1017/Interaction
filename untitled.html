@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Animanl In Nature</title> 
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src = "function.js"></script>
+	</head>
+
+	<body>
+		<center><button id="click-me">Click the Image!</button></center>
+		<p>Click to Play and Pause</p>
+		
+			<div class = "container">
+				<div class="gallery">
+
+					<!-- alpaca -->
+					<a style="cursor: pointer;"><img id="startOrStopImg1" src = "alpaca.png">
+					<audio id = "audio1">
+						<source src="alpaca.mp3" type="audio/mp3">
+						<source src="alpaca.ogg" type="audio/ogg">
+					</audio></a>
+
+					<!-- antelope -->
+					<a style="cursor: pointer;"><img id="startOrStopImg2" src = "antelope.jpg">
+					<audio id = "audio2">
+						<source src="antelope.mp3" type="audio/mp3">
+						<source src="antelope.ogg" type="audio/ogg">
+					</audio></a>
+
+				</div>
+
+				<center><button id="click-me"><a href="https://lz1017.github.io/Nature/" target="_blank" style="color:darkred">Main Space</button></center>
+			</div>
+
+			<!-- <script type="text/javascript">
+				document.getElementById("startOrStopImg1").onclick = function(){
+					var audio = document.getElementById("audio1")
+					if (audio.paused == false){
+					      audio.pause();
+					}else{
+					      audio.play();
+					}
+				};
+
+				document.getElementById("startOrStopImg2").onclick = function(){
+					var audio = document.getElementById("audio2")
+					if (audio.paused == false){
+					      audio.pause();
+					}else{
+					      audio.play();
+					}
+				};
+				 
+
+
+			</script> -->
+
+	</body>
+
+</html>
