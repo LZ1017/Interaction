@@ -22,7 +22,7 @@
 
 					<!-- alpaca -->
 					<div class="item">
-					<a style="cursor: pointer;"><img id="startOrStopImg1" src = "alpaca.png">
+					<a style="cursor: pointer;"><img id="img1" src = "alpaca.png">
 					<audio id = "audio1">
 						<source src="alpaca.mp3" type="audio/mp3">
 						<source src="alpaca.ogg" type="audio/ogg">
@@ -30,7 +30,7 @@
 
 					<!-- antelope -->
 					<div class="item">
-					<a style="cursor: pointer;"><img id="startOrStopImg2" src = "antelope.jpg">
+					<a style="cursor: pointer;"><img id="img2" src = "antelope.jpg">
 					<audio id = "audio2">
 						<source src="antelope.mp3" type="audio/mp3">
 						<source src="antelope.ogg" type="audio/ogg">
@@ -38,7 +38,7 @@
 
 					<!-- bee -->
 					<div class="item">
-					<a style="cursor: pointer;"><img id="startOrStopImg3" src = "bee.png">
+					<a style="cursor: pointer;"><img id="img3" src = "bee.png">
 					<audio id = "audio3">
 						<source src="bee.mp3" type="audio/mp3">
 						<source src="bee.ogg" type="audio/ogg">
@@ -46,7 +46,7 @@
 
 					<!-- buffalo -->
 					<div class="item">
-					<a style="cursor: pointer;"><img id="startOrStopImg4" src = "buffalo.jpeg">
+					<a style="cursor: pointer;"><img id="img4" src = "buffalo.jpeg">
 					<audio id = "audio4">
 						<source src="buffalo.mp3" type="audio/mp3">
 						<source src="buffalo.ogg" type="audio/ogg">
@@ -54,7 +54,7 @@
 
 					<!-- butterfly -->
 					<div class="item">
-					<a style="cursor: pointer;"><img id="startOrStopImg5" src = "butterfly.jpg">
+					<a style="cursor: pointer;"><img id="img5" src = "butterfly.jpg">
 					<audio id = "audio5">
 						<source src="butterfly.mp3" type="audio/mp3">
 						<source src="butterfly.ogg" type="audio/ogg">
@@ -62,10 +62,18 @@
 
 					<!-- camel -->
 					<div class="item">
-					<a style="cursor: pointer;"><img id="startOrStopImg6" src = "camel.jpg">
+					<a style="cursor: pointer;"><img id="img6" src = "camel.jpg">
 					<audio id = "audio6">
 						<source src="camel.mp3" type="audio/mp3">
 						<source src="camel.ogg" type="audio/ogg">
+					</audio></a></div>
+
+					<!-- cat -->
+					<div class="item">
+					<a style="cursor: pointer;"><img id="img7" src = "cat.jpg">
+					<audio id = "audio7">
+						<source src="cat.mp3" type="audio/mp3">
+						<source src="cat.ogg" type="audio/ogg">
 					</audio></a></div>
 					
 				
@@ -76,7 +84,7 @@
 			</div>
 
 			<script type="text/javascript">
-				document.getElementById("startOrStopImg1").onclick = function(){
+				document.getElementById("img1").onclick = function(){
 					var audio = document.getElementById("audio1")
 					if (audio.paused == false){
 					      audio.pause();
@@ -85,7 +93,7 @@
 					}
 				};
 
-				document.getElementById("startOrStopImg2").onclick = function(){
+				document.getElementById("img2").onclick = function(){
 					var audio = document.getElementById("audio2")
 					if (audio.paused == false){
 					      audio.pause();
@@ -94,7 +102,7 @@
 					}
 				};
 
-				document.getElementById("startOrStopImg3").onclick = function(){
+				document.getElementById("img3").onclick = function(){
 					var audio = document.getElementById("audio3")
 					if (audio.paused == false){
 					      audio.pause();
@@ -103,7 +111,7 @@
 					}
 				};
 				 
-				document.getElementById("startOrStopImg4").onclick = function(){
+				document.getElementById("img4").onclick = function(){
 					var audio = document.getElementById("audio4")
 					if (audio.paused == false){
 					      audio.pause();
@@ -112,7 +120,7 @@
 					}
 				};
 
-				document.getElementById("startOrStopImg5").onclick = function(){
+				document.getElementById("img5").onclick = function(){
 					var audio = document.getElementById("audio5")
 					if (audio.paused == false){
 					      audio.pause();
@@ -121,8 +129,17 @@
 					}
 				};
 
-				document.getElementById("startOrStopImg6").onclick = function(){
+				document.getElementById("img6").onclick = function(){
 					var audio = document.getElementById("audio6")
+					if (audio.paused == false){
+					      audio.pause();
+					}else{
+					      audio.play();
+					}
+				};
+
+				document.getElementById("img7").onclick = function(){
+					var audio = document.getElementById("audio7")
 					if (audio.paused == false){
 					      audio.pause();
 					}else{
