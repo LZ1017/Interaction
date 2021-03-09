@@ -31,14 +31,14 @@ body {
   overflow:hidden;
 }
 
-.image{
+img{
   display: block;
   width:100%;
   height: 100%;
   object-fit: cover;
 }
 
-.image:hover{
+img:hover{
   transform:scale(1.15);
 }
 
