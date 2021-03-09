@@ -54,3 +54,11 @@ button {
   border: 3px solid;
   color: #432f29;
 }
+
+p{
+  font-family: "Holtwood One SC", serif;
+  font-size:1rem;
+  margin-top: 1rem;
+  background: transparent;
+  text-align: center;
+}
