@@ -14,10 +14,13 @@
 	<body>
 		<center><button id="click-me">Click the Image!</button></center>
 			<br>
-		<ul class="featured">
+		
+			<ul class="featured">
 
+			<a onclick = "playsong()" ondblclick="pausesong()">
+				<li class= "alpaca"></li>
+			</a>
 
-			<li class= "alpaca"></li>
 
 			<li class= "antelope"></li>
 
@@ -58,6 +61,22 @@
 
 		</ul>
 
+		<script>
+		
+		var song = new Audio();
+		song.src = "alpaca.mp3";
+
+		const playsong = () =>{
+			song.play();
+
+		}
+
+		const pausesong =() =>{
+			song.pause();
+		}
+
+		</script>
+
 	</body>
 
-	</html>
+</html>
