@@ -18,125 +18,75 @@
 		
 			<div class = "container">
 				<div class="gallery">
+					
 
-					<!-- aloaca -->
-					<div class= "item">
-						<a href="javascript:playSound('alpaca')">
-						<img class = "image" src="alpaca.png">
-						</a>
-					</div>
-					<audio id = "alpaca" preload="auto">
-						<source src="alpaca.mp3" type="audio/mpeg">
-						<source src="alpaca.ogg" type="audio/ogg">	
-					</audio>
-
+					<!-- alpaca -->
+					<div class="item">
+					<a style="cursor: pointer;"><img id="startOrStopImg1" src = "alpaca.png">
+					<audio id = "audio1">
+						<source src="alpaca.mp3" type="audio/mp3">
+						<source src="alpaca.ogg" type="audio/ogg">
+					</audio></a></div>
 
 					<!-- antelope -->
-					<div class = "item">
-						<a href="javascript:playSound('antelope')">
-						<img class = "image" src = "antelope.jpg">
-					</a>
-					</div>
+					<div class="item">
+					<a style="cursor: pointer;"><img id="startOrStopImg2" src = "antelope.jpg">
+					<audio id = "audio2">
+						<source src="antelope.mp3" type="audio/mp3">
+						<source src="antelope.ogg" type="audio/ogg">
+					</audio></a></div>
 
-					<audio id = "antelope" preload="auto">
-						<source src="antelope.mp3" type="audio/mpeg">
-						<source src="antelope.ogg" type="audio/ogg">	
-					</audio>
-
-					<!-- bee  -->
-					<div class = "item">
-						<a href="javascript:playSound('bee')">
-						<img class = "image" src = "bee.png">
-					</a>
-					</div>
-
-					<audio id = "bee" preload="auto">
-						<source src="bee.mp3" type="audio/mpeg">
+					<!-- bee -->
+					<div class="item">
+					<a style="cursor: pointer;"><img id="startOrStopImg3" src = "bee.png">
+					<audio id = "audio3">
+						<source src="bee.mp3" type="audio/mp3">
 						<source src="bee.ogg" type="audio/ogg">
-					</audio>
+					</audio></a></div>
 
-					<!-- buffalo -->
-					<div class = "item">
-						<a href="javascript:playSound('buffalo')">
-						<img class = "image" src = "buffalo.jpeg">
-					</a>
-					</div>
 
-					<audio id = "buffalo" preload="auto">
-						<source src="buffalo.mp3" type="audio/mpeg">
-						<source src="buffalo.ogg" type="audio/ogg">
-					</audio>
+
 
 					<!-- camel -->
-					<div class = "item">
-						<a href="javascript:playSound('camel')">
-						<img class = "image" src = "camel.jpg" style="background-position: 60%;">
-					</a>
-					</div>
+			
+						<!-- <a href="javascript:playSound('camel')">
+						<img class = "image" src = "camel.jpg" style="background-position: 60%;"> -->
+					
+				
 
-					<audio id = "camel" preload="auto">
-						<source src="camel.mp3" type="audio/mpeg">
-						<source src="camel.ogg" type="audio/ogg">
-					</audio>
+				
 				</div>
-
-				<center><button id="click-me"><a href="https://lz1017.github.io/Nature/" target="_blank" style="color:darkred">Main Space</button></center>
+				<center><button id="click-me"><a href="https://lz1017.github.io/Nature/" target="_blank" style="color:darkred">Main Space</a></button></center>
 			</div>
 
 			<script type="text/javascript">
-				var audio=document.getElementById("alpaca"); 
-				var audio2=document.getElementById("antelope"); 
-				var audio3=document.getElementById("bee");
-				var audio4=document.getElementById("buffalo");
-				var audio5=document.getElementById("camel");
+				document.getElementById("startOrStopImg1").onclick = function(){
+					var audio = document.getElementById("audio1")
+					if (audio.paused == false){
+					      audio.pause();
+					}else{
+					      audio.play();
+					}
+				};
 
+				document.getElementById("startOrStopImg2").onclick = function(){
+					var audio = document.getElementById("audio2")
+					if (audio.paused == false){
+					      audio.pause();
+					}else{
+					      audio.play();
+					}
+				};
 
-				// audio1 - alpaca
-				function playSound()
-				{ 
-				if (audio.paused) 
-				  audio.play(); 
-				else 
-				  audio.pause(); 
-				} 
-
-				// audio2 - antelope
-				function playSound()
-				{ 
-				if (audio2.paused) 
-				  audio2.play(); 
-				else 
-				  audio2.pause(); 
-				} 
-
-				// audio 3 -bee
-				function playSound()
-				{ 
-				if (audio3.paused) 
-				  audio3.play(); 
-				else 
-				  audio3.pause(); 
-				} 
-
-				// audio 4 -buffalo
-				function playSound()
-				{ 
-				if (audio4.paused) 
-				  audio4.play(); 
-				else 
-				  audio4.pause(); 
-				} 
-
-				// audio 5 -camel
-				function playSound()
-				{ 
-				if (audio5.paused) 
-				  audio5.play(); 
-				else 
-				  audio5.pause(); 
-				} 
-
-				//audio 6 
+				document.getElementById("startOrStopImg3").onclick = function(){
+					var audio = document.getElementById("audio3")
+					if (audio.paused == false){
+					      audio.pause();
+					}else{
+					      audio.play();
+					}
+				};
+				 
 
 
 			</script>
