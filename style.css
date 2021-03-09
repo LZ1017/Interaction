@@ -1,39 +1,8 @@
-:root {
-  --bear: #5d4037;
-  --leaf: #432f29;
-  --green: #74875d;
-  --flower: wheat;
-  --fox: #bf360c;
-  --cloud-base: 4vw;
-  --bear-base: 3vw;
-  --cat-base: 6vw;
-  --apple-base: 2.5vw;
-  --mushroom-base: 3vw;
-  --deer-base: 3.25vw;
-  --fox-base: 3vw;
-  --wolf-base: 4.5vw;
-  --flower-base: 2.5vw;
-  --bird-base: 4vw;
-  --pine-base: 1.5vw;
-  --sq-base: 4vw;
-  --light: wheat;
-  --white: white;
-}
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
 
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 2em;
-    padding-inline-end:2em;
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
 }
 
 body {
@@ -43,174 +12,35 @@ body {
   height: 100vh;
 }
 
-.featured {
-  margin: 0;
-  pointer-events: none;
-  list-style: none;
-  display: grid;
-  grid-gap: 2vw;
-  grid-template-columns: repeat(4, 1fr);
-}
-.featured li {
-  border: 2px solid #bf360c;
-  height: 22vw;
-  position: relative;
-  transform-origin: center center;
-  transition: transform 0.5s, border 0.3s 0.5s;
-}
-.featured div {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.featured div:before, .featured div:after {
-  content: "";
-  position: absolute;
+.container{
+  max-width: 100rem;
+  margin:0 auto;
+  padding:0 2rem 2rem;
 }
 
-.image_resize{
-  height: 20vw;
+.gallery{
+  display: flex;;
+  flex-wrap: wrap;
+  margin:-1rem -1rem;
+}
+
+.item{
+  flex: 1 0 24rem;
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0,0,0,0.5);
+  overflow:hidden;
+}
+
+.image{
+  display: block;
+  width:100%;
+  height: 100%;
   object-fit: cover;
-  object-position: center center;
-}
-/*animal*/
-
-.alpaca{
-  background: url("alpaca.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
-.antelope{
-  background: url("antelope.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: -150px;
+.image:hover{
+  transform:scale(1.15);
 }
-
-.bird{
-  background: url("yellow_robin.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.bee{
-  background: url("bee.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.buffalo{
-  background: url("buffalo.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.butterfly{
-  background: url("butterfly.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 67%;
-}
-
-.camel{
-  background: url("camel.jpg");
-  background-repeat: no-repeat;
-  background-size: 120% 100%;
-  background-position: 5%;
-}
-
-.cat{
-  background: url("cat.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.cow{
-  background: url("cow.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.crow{
-  background: url("crow.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.dog{
-  background: url("dog.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.dove{
-  background: url("dove.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.duck{
-  background: url("duck.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.elephant{
-  background: url("elephant.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.owl{
-  background: url("owl.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 60%;
-}
-
-.parrot{
-  background: url("parrot.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.rabbit{
-  background: url("rabbit.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  }
-
-.whale{
-  background: url("whale.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-      <li class= "owl"></li>
-
-      <li class="panda"></li>
-
-      <li class = "rabbit"></li>
-
-      <li class= "parrot"></li>
-
-      <li class= "whale"></li>
-
 
 footer {
   text-align: center;
