@@ -9,73 +9,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src = "function.js"></script>
 	</head>
 
 	<body>
 		<center><button id="click-me">Click the Image!</button></center>
 			<br>
 		
-			<ul class="featured">
+			<div class = "container">
+				<div class="gallery">
 
-			<a onclick = "playsong()" ondblclick="pausesong()">
-				<li class= "alpaca"></li>
-			</a>
+					<!-- audio alpaca -->
+					<div class= "item">
+						<a href="javascript:playSound('alpaca')">
+						<img class = "image" src="alpaca.png">
+						</a>
+					</div>
+					<audio id = "alpaca" preload="auto">
+						<source src="alpaca.mp3" type="audio/mpeg">
+						<source src="alpaca.ogg" type="audio/ogg">	
+					</audio>
 
 
-			<li class= "antelope"></li>
+					<!-- audio antelope -->
+					<div class = "item">
+						<a href="javascript:playSound('antelope')">
+						<img class = "image" src = "antelope.jpg">
+						</a>
+					</div>
 
-			<!-- <li class= "bat"></li> -->
+					<audio id = "antelope" preload="auto">
+						<source src="antelope.mp3" type="audio/mpeg">
+						<source src="antelope.ogg" type="audio/ogg">
+					</audio>
 
-			<li class= "bee"></li>
+					<!-- audio bee-->
+					<div class = "item">
+						<a href="javascript:playSound('bee')">
+						<img class = "image" src = "bee.png">
+						</a>
+					</div>
 
-			<li class= "bird"></li>
+					<audio id = "bee" preload="auto">
+						<source src="bee.mp3" type="audio/mpeg">
+						<source src="bee.ogg" type="audio/ogg">
+					</audio>
 
-			<li class= "buffalo"></li>
+					<!-- audio bufflao-->
+					<div class = "item">
+						<a href="javascript:playSound('bffalo')">
+						<img class = "image" src = "buffalo.jpeg">
+					</div>
 
-			<li class= "butterfly"></li>
+					<audio id = "buffalo" preload="auto">
+						<source src="buffalo.mp3" type="audio/mpeg">
+						<source src="buffalo.ogg" type="audio/ogg">
+					</audio>
 
-			<li class= "camel"></li>
+					<!--  -->
+					<div class = "item">
+						<img class = "image" src = "camel.jpg">
+					</div>
 
-			<li class = "cat"></li>
+					<div class="item">
+						<img class="image" src="cat.jpg">
+					</div>
 
-			<li class= "cow"></li>
+				</div>
+			</div>
 
-			<li class= "crow"></li>
+			<script type="text/javascript">
+				var audio=document.getElementById("alpaca"); 
+				var audio2=document.getElementById("antelope"); 
+				var audio3=document.getElementById("bee"); 
+				var audio4=document.getElementById("buffalo"); 
+				var audio5=document.getElementById("camel"); 
+				var audio6=document.getElementById("cat"); 
+				var audio7=document.getElementById("antelope"); 
+				var audio8=document.getElementById("antelope"); 
+				var audio9=document.getElementById("antelope"); 
 
-			<li class = "dog"></li>
 
-			<li class = "dove"></li>
+				// audio1
+				function playSound()
+				{ 
+				if (audio.paused) 
+				  audio.play(); 
+				else 
+				  audio.pause(); 
+				} 
 
-			<li class = "duck"></li>
+				// audio2
+				function playSound()
+				{ 
+				if (audio2.paused) 
+				  audio2.play(); 
+				else 
+				  audio2.pause(); 
+				} 
 
-			<li class = "elephant"></li>
+				// audio3
+				function playSound()
+				{ 
+				if (audio3.paused) 
+				  audio3.play(); 
+				else 
+				  audio3.pause(); 
+				} 
 
-			<li class= "owl"></li>
+				// audio4
+				function playSound()
+				{ 
+				if (audio4.paused) 
+				  audio4.play(); 
+				else 
+				  audio4.pause(); 
+				} 
 
-	<!-- 		<li class="panda"></li> -->
-			<li class= "parrot"></li>
+				// audio5
+				function playSound()
+				{ 
+				if (audio5.paused) 
+				  audio5.play(); 
+				else 
+				  audio5.pause(); 
+				} 
 
-			<li class = "rabbit"></li>
+				// audio6
+				function playSound()
+				{ 
+				if (audio6.paused) 
+				  audio6.play(); 
+				else 
+				  audio6.pause(); 
+				} 
 
-			<li class= "whale"></li>
-
-		</ul>
-
-		<script>
-		
-		var song = new Audio();
-		song.src = "alpaca.mp3";
-
-		const playsong = () =>{
-			song.play();
-
-		}
-
-		const pausesong =() =>{
-			song.pause();
-		}
-
-		</script>
+				// audio7
+				function playSound()
+				{ 
+				if (audio7.paused) 
+				  audio7.play(); 
+				else 
+				  audio7.pause(); 
+				} 
+			</script>
 
 	</body>
 
