@@ -44,13 +44,29 @@
 						<source src="bee.ogg" type="audio/ogg">
 					</audio></a></div>
 
+					<!-- buffalo -->
+					<div class="item">
+					<a style="cursor: pointer;"><img id="startOrStopImg4" src = "buffalo.jpeg">
+					<audio id = "audio4">
+						<source src="buffalo.mp3" type="audio/mp3">
+						<source src="buffalo.ogg" type="audio/ogg">
+					</audio></a></div>
 
-
+					<!-- butterfly -->
+					<div class="item">
+					<a style="cursor: pointer;"><img id="startOrStopImg5" src = "butterfly.jpg">
+					<audio id = "audio5">
+						<source src="butterfly.mp3" type="audio/mp3">
+						<source src="butterfly.ogg" type="audio/ogg">
+					</audio></a></div>
 
 					<!-- camel -->
-			
-						<!-- <a href="javascript:playSound('camel')">
-						<img class = "image" src = "camel.jpg" style="background-position: 60%;"> -->
+					<div class="item">
+					<a style="cursor: pointer;"><img id="startOrStopImg6" src = "camel.jpg">
+					<audio id = "audio6">
+						<source src="camel.mp3" type="audio/mp3">
+						<source src="camel.ogg" type="audio/ogg">
+					</audio></a></div>
 					
 				
 
@@ -87,7 +103,32 @@
 					}
 				};
 				 
+				document.getElementById("startOrStopImg4").onclick = function(){
+					var audio = document.getElementById("audio4")
+					if (audio.paused == false){
+					      audio.pause();
+					}else{
+					      audio.play();
+					}
+				};
 
+				document.getElementById("startOrStopImg5").onclick = function(){
+					var audio = document.getElementById("audio5")
+					if (audio.paused == false){
+					      audio.pause();
+					}else{
+					      audio.play();
+					}
+				};
+
+				document.getElementById("startOrStopImg6").onclick = function(){
+					var audio = document.getElementById("audio6")
+					if (audio.paused == false){
+					      audio.pause();
+					}else{
+					      audio.play();
+					}
+				};
 
 			</script>
 
